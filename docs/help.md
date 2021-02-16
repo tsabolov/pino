@@ -11,7 +11,7 @@
 * [Log levels as labels instead of numbers](#level-string)
 * [Pino with `debug`](#debug)
 * [Unicode and Windows terminal](#windows)
-* [Mapping Pino Log Levels to Google Cloud Logging (Stackdriver) Serverity Levels](#stackdriver)
+* [Mapping Pino Log Levels to Google Cloud Logging (Stackdriver) Severity Levels](#stackdriver)
 * [Avoid Message Conflict](#avoid-message-conflict)
 
 <a id="exit-logging"></a>
@@ -244,7 +244,7 @@ executing in the terminal `chcp 65001`. This is a known limitation of
 Node.js.
 
 <a id="stackdriver"></a>
-## Mapping Pino Log Levels to Google Cloud Logging (Stackdriver) Serverity Levels
+## Mapping Pino Log Levels to Google Cloud Logging (Stackdriver) Severity Levels
 
 Google Cloud Logging uses `severity` levels instead log levels. As a result, all logs may show as INFO
 level logs while completely ignoring the level set in the pino log. Google Cloud Logging also prefers that
